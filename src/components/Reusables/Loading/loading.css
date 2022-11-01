@@ -1,0 +1,111 @@
+/* animation */
+@keyframes redBox {
+  50% {top: 85%; left: 0;}
+  100% {top: 85%; left: 85%;}
+}
+@keyframes blackBox {
+  50% {bottom: 85%; right: 0;}
+  100% {bottom: 85%; right: 85%;}
+}
+@keyframes whiteBox {
+  100% {transform: rotate(360deg);}
+}
+@keyframes topCorner {
+  0% {opacity: 1; box-shadow: -2px -2px 1px 0px rgba(100,100,100,1); border-color: #333;}
+  10% {opacity: 0;}
+  90% {opacity: 0;}
+  100% {opacity: 1; box-shadow: -2px -2px 1px 0px rgba(100,100,100,1); border-color: #f00;}
+}
+@keyframes bottomCorner {
+  0% {opacity: 1; box-shadow: 2px 2px 1px 0px rgba(100,100,100,1); border-color: #f00;}
+  10% {opacity: 0;}
+  90% {opacity: 0;}
+  100% {opacity: 1; box-shadow: 2px 2px 1px 0px rgba(100,100,100,1); border-color: #333;}
+}
+.animation-box {
+  position: relative;
+  margin: 0 auto;
+  width: 100%;
+  transform: scale(1.125);
+  
+}
+.animation {
+  position: relative;
+  width: 15%;
+  margin: auto;
+  aspect-ratio: 1;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  animation-name: anim-box;
+  animation-duration: 2s;
+  animation-iteration-count: infinite;
+  animation-direction: alternate;
+  animation-timing-function: linear;
+}
+.border {
+  position: absolute;
+  width: 5%;
+  margin: auto;
+  aspect-ratio: 1;
+  z-index: 100;
+  border: 0;
+}
+.border1 {
+  left: 42.5%;
+  border-top: 2px solid rgba(255,0,0);
+  border-left: 2px solid rgba(255,0,0);
+  animation-name: topCorner;
+  animation-duration: 1.5s;
+  animation-iteration-count: infinite;
+  animation-direction: alternate-reverse;
+  animation-timing-function: linear;
+}
+.border2 {
+  left: 52.5%;
+  bottom: 0;
+  border-right: 2px solid rgba(20%,20%,20%);
+  border-bottom: 2px solid rgba(20%,20%,20%);
+  animation-name: bottomCorner;
+  animation-duration: 1.5s;
+  animation-iteration-count: infinite;
+  animation-direction: alternate-reverse;
+  animation-timing-function: linear;
+}
+.box {
+  width: 15%;
+  aspect-ratio: 1;
+}  
+.box1 {
+  background: #f00;
+  order: 1;
+  position: absolute;
+  top: 0;
+  left: 0;
+  animation-name: redBox;
+  animation-duration: 1.5s;
+  animation-iteration-count: infinite;
+  animation-direction: alternate;
+  animation-timing-function: linear;
+}
+.box2 {
+  background: #333;
+  order: 3;
+  position: absolute;
+  bottom: 0;
+  right: 0;
+  animation-name: blackBox;
+  animation-duration: 1.5s;
+  animation-iteration-count: infinite;
+  animation-direction: alternate;
+  animation-timing-function: linear;
+}
+.box3 {
+  background: #ddd;
+  order: 2;
+  animation-name: whiteBox;
+  animation-duration: 1.5s;
+  animation-iteration-count: infinite;
+  animation-direction: alternate;
+  animation-timing-function: linear;
+}
