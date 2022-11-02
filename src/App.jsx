@@ -32,9 +32,9 @@ function App() {
       <div onClick={e => handleClick(e)} className={`${theme ? "dark" : ""} page__control font-nunito font-light text-base bg-bgLight min-h-screen text-bgDark`} style={{backgroundColor: theme && "hsl(207, 26%, 17%)"}}>
         <Header />
         <Routes>
-          <Route path='/' element={<Home/>} />
+          <Route path='CountriesApp/' element={<Home/>} />
           <Route path='*' element={<Error/>} />
-          <Route path='details/:id' element={<Details/>}>
+          <Route path='CountriesApp/details/:id' element={<Details/>}>
             
           </Route>
         </Routes>
