@@ -81,7 +81,7 @@ const Details = () => {
       {
         data.length ? <>
           <div className="back-btn pb-16">
-        <Link to="/">
+        <Link to="/CountriesApp">
           <button className=' py-1.5 px-8 rounded-sm bg-textDark flex gap-x-2 justify-center items-center shadow-md shadow-zinc-300 dark:bg-elemDark dark:shadow-bgDark'><BsArrowLeft />Back</button>
         </Link>
       </div>

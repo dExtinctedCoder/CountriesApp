@@ -115,7 +115,7 @@ const Main = () => {
       data.length ? data.map(({name, flags, population, region, capital}, index) => {
 
         return (
-          <Link  key={name} to={`/details/${name}`}>
+          <Link  key={name} to={`details/${name}`}>
             <div className='card cursor-pointer shadow-xl rounded-xl overflow-hidden flex flex-col bg-bgLight dark:bg-elemDark dark:text-textDark'>
             <div className=' '><img className='aspect-3/2 block w-full h-full' src={flags.png} alt="#flag"/></div>
             <div className=' pt-5 pb-8 px-8'>
