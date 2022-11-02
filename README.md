@@ -7,3 +7,5 @@ The information displayed is fetched from an **[open-source api](https://restcou
 ### Technologies used:
 * **[Reactjs](https://reactjs.org/ "A JavaScript library for building user interfaces")**
 * **[Tailwind](https://tailwindcss.com/ "A utility-first CSS framework that can be composed to build any design, directly in your markup")**
+
+#### **[Live link](https://dextinctedcoder.github.io/CountriesApp/)**
